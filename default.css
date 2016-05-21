@@ -1,0 +1,68 @@
+@import url("fonts.css");
+@import url("fontello/css/fontello.css");
+@import url("font-awesome/css/font-awesome.min.css");
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+   background:white ;
+   font-family: 'arial', sans-serif;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 30px;
+	color: ghostwhite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   color: greenyellow;
+	font-family: 'Arial', sans-serif;
+   font-weight: normal;
+}
+
+
+img {
+   max-width: 100%;
+   height: auto;
+    margin-top: 80px;
+}
+
+.row {
+   width: 96%;
+   max-width: 1020px;
+   margin: 0 auto;
+}
+/* fixed width for IE8 */
+.ie .row { width: 1000px ; }
+
+.narrow .row { max-width: 980px; }
+
+.row .row { width: auto; max-width: none; margin: 0 -20px; }
+
+/* row clearing */
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+.column, .columns {
+   position: relative;
+   padding: 0 20px;
+   min-height: 1px;
+   float: left;
+}
+.column.centered, .columns.centered  {
+    float: none;
+    margin: 0 auto;
+}
+
+.row .three       { width: 25%; }
+.row .nine        { width: 75%; }

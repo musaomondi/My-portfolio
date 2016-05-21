@@ -1,0 +1,197 @@
+header {
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   background: black;
+   background-size:contain;
+   text-align: center;
+   overflow:visible;
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   text-align: center;
+}
+header .banner-text { width: 100%; }
+header .banner-text h1 {
+   font-family:  'Arial-bold', sans-serif;
+    font-size: 98px;
+   color: greenyellow;
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+}
+header .banner-text h3 {
+   font: 18px/1.9em 'Georgia', serif;
+   color: antiquewhite;
+   margin: 2px auto;
+   width: 70%;
+}
+header .banner-text hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: navajowhite;
+  
+}
+
+/* header social links */
+header .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+}
+header .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+header .social li a { color: white; }
+header .social li a:hover { color: cyan; }
+
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 4px;
+	 padding: 3px;
+	 border:none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 14px 'Times new Roman-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position:fixed;
+   left: 0;
+   top: 0;
+}
+
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+ display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: white;
+}
+/* About */
+#about {
+   background: black;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+#about h2 {
+   font: 'arial-bold', sans-serif;
+   color: white;
+   margin-bottom: 20px;
+}
+#about .profile-pic {
+   position:relative;
+   width: 120px;
+   height: 100px;
+   border-radius: 50%;
+}
+.img-circle {
+    border-radius: 70%;
+}
+
+#about .contact-details { width: 45%;}
+#about .main-col { padding-right: 5%; }
+/* Resume */
+#resume {
+   background: black;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#resume h1 {
+   font:24px 'Arial-bold', sans-serif;
+}
+#resume h3 {
+   font: 25px 'Arial-bold', sans-serif;
+}
+
+#resume .header-col { padding-top: 9px; }
+#resume .main-col { padding-right: 10%; }
+
+.education, .interpersonal, .hobbies {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid greenyellow ;
+}
+#resume .info {
+   font: 24px 'times new roman';
+   color: greenyellow;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+
+/*Footer*/
+footer {
+   padding-top: 20px;
+   margin-bottom: 20px;
+   color: white;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+ }
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.ie footer .copyright li {
+   display: inline;
+}
+footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+}
+footer .copyright  li:first-child:before {
+    display: none;
+}
+
+
